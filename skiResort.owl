@@ -1,0 +1,772 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/valraiso/ontologies/2024/1/esfvel_ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2024/1/esfvel_ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2024/1/esfvel_ontology"/>
+    <Prefix name="g" IRI="http://www.semanticweb.org/ontologies/2024/1/esfvel_ontology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="obda" IRI="https://w3id.org/obda/vocabulary#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Abstract"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Certificate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Collection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Discipline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GroupLesson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GroupLessonOcurrence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Instructor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lesson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeetingPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Package"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrivateLesson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Season"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeachingLanguage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeachingLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeachingSchool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/CompetitionLesson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Hotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Insurance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Kindergarten"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Lift"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SkiRental"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TestLesson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Transfer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongs_to_discipline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#course_is_given_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ends_on_the_same_day"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#given_in_language"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#given_in_season"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#given_in_the_same_time_slot"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#gives_course"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_ocurrence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_service"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_teaching_level"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#meeting_point_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#same_level"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#service_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#similar_size"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#starts_in_place"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#starts_on_the_same_day"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#teaches_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/acquired_package"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/learns_in_language"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/teaches_discipline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/teaches_in_school"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/teaches_level"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#end_time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#start_time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#weight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/prob_school_comp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/prob_school_ffs"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/prob_school_gl"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/prob_school_hotel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/prob_school_insurance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/prob_school_kindg"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/prob_school_lift"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/prob_school_pl"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/prob_school_skiRental"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/prob_school_testl"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/prob_school_transfer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alpine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fall"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Histo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nordic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Other"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spring"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Summer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Winter"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Abstract"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Certificate"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Discipline"/>
+        <Class IRI="#Abstract"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GroupLesson"/>
+        <Class IRI="#Lesson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GroupLessonOcurrence"/>
+        <Class IRI="#GroupLesson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Instructor"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lesson"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meal"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeetingPoint"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Object"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Package"/>
+        <Class IRI="#Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrivateLesson"/>
+        <Class IRI="#Lesson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Season"/>
+        <Class IRI="#Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Service"/>
+        <Class IRI="#Abstract"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeachingLanguage"/>
+        <Class IRI="#Abstract"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeachingLevel"/>
+        <Class IRI="#Abstract"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeachingSchool"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Time"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CompetitionLesson"/>
+        <Class IRI="#Lesson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Hotel"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Insurance"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Kindergarten"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Lift"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SkiRental"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TestLesson"/>
+        <Class IRI="#Lesson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Transfer"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Discipline"/>
+        <NamedIndividual IRI="#Alpine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeachingLanguage"/>
+        <NamedIndividual IRI="#EN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeachingLanguage"/>
+        <NamedIndividual IRI="#FR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#Fall"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Discipline"/>
+        <NamedIndividual IRI="#Histo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Discipline"/>
+        <NamedIndividual IRI="#Nordic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Discipline"/>
+        <NamedIndividual IRI="#Other"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#Spring"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#Summer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#Winter"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#teaches_in"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/teaches_in_school"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#course_is_given_by"/>
+        <ObjectProperty IRI="#gives_course"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_service"/>
+        <ObjectProperty IRI="#service_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#meeting_point_of"/>
+        <ObjectProperty IRI="#starts_in_place"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongs_to_discipline"/>
+        <Class IRI="#GroupLesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongs_to_discipline"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#course_is_given_by"/>
+        <Class IRI="#GroupLesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#course_is_given_by"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ends_on_the_same_day"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#given_in_language"/>
+        <Class IRI="#GroupLesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#given_in_language"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#given_in_season"/>
+        <Class IRI="#GroupLesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#given_in_season"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#given_in_the_same_time_slot"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#gives_course"/>
+        <Class IRI="#TeachingSchool"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_ocurrence"/>
+        <Class IRI="#GroupLesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_service"/>
+        <Class IRI="#Package"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_teaching_level"/>
+        <Class IRI="#GroupLesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_teaching_level"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#meeting_point_of"/>
+        <Class IRI="#MeetingPoint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#same_level"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#service_of"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#similar_size"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#starts_in_place"/>
+        <Class IRI="#GroupLesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#starts_in_place"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#starts_on_the_same_day"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#teaches_in"/>
+        <Class IRI="#Instructor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/acquired_package"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/learns_in_language"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/teaches_discipline"/>
+        <Class IRI="#Instructor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/teaches_in_school"/>
+        <Class IRI="#Instructor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/teaches_level"/>
+        <Class IRI="#Instructor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongs_to_discipline"/>
+        <Class IRI="#Discipline"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#course_is_given_by"/>
+        <Class IRI="#TeachingSchool"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ends_on_the_same_day"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#given_in_language"/>
+        <Class IRI="#TeachingLanguage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#given_in_season"/>
+        <Class IRI="#Season"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#given_in_the_same_time_slot"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#gives_course"/>
+        <Class IRI="#GroupLesson"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#gives_course"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_ocurrence"/>
+        <Class IRI="#GroupLessonOcurrence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_service"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_teaching_level"/>
+        <Class IRI="#TeachingLevel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#meeting_point_of"/>
+        <Class IRI="#GroupLesson"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#meeting_point_of"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#same_level"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#service_of"/>
+        <Class IRI="#Package"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#similar_size"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#starts_in_place"/>
+        <Class IRI="#MeetingPoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#starts_on_the_same_day"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#teaches_in"/>
+        <Class IRI="#TeachingLanguage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/acquired_package"/>
+        <Class IRI="#Package"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/learns_in_language"/>
+        <Class IRI="#TeachingLanguage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/teaches_discipline"/>
+        <Class IRI="#Discipline"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/teaches_in_school"/>
+        <Class IRI="#TeachingSchool"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/teaches_level"/>
+        <Class IRI="#TeachingLevel"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/prob_school_comp"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#end_time"/>
+        <Class IRI="#GroupLessonOcurrence"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#end_time"/>
+        <Class IRI="#Season"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#price"/>
+        <Class IRI="#GroupLesson"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#start_time"/>
+        <Class IRI="#GroupLessonOcurrence"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#start_time"/>
+        <Class IRI="#Season"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/prob_school_comp"/>
+        <Class IRI="#TeachingSchool"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/prob_school_ffs"/>
+        <Class IRI="#TeachingSchool"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/prob_school_gl"/>
+        <Class IRI="#TeachingSchool"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/prob_school_hotel"/>
+        <Class IRI="#TeachingSchool"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/prob_school_insurance"/>
+        <Class IRI="#TeachingSchool"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/prob_school_kindg"/>
+        <Class IRI="#TeachingSchool"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/prob_school_lift"/>
+        <Class IRI="#TeachingSchool"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/prob_school_pl"/>
+        <Class IRI="#TeachingSchool"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/prob_school_skiRental"/>
+        <Class IRI="#TeachingSchool"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/prob_school_testl"/>
+        <Class IRI="#TeachingSchool"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/prob_school_transfer"/>
+        <Class IRI="#TeachingSchool"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#end_time"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#price"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#start_time"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#weight"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/prob_school_comp"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/prob_school_ffs"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/prob_school_gl"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/prob_school_hotel"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/prob_school_insurance"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/prob_school_kindg"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/prob_school_lift"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/prob_school_pl"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/prob_school_skiRental"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/prob_school_testl"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/prob_school_transfer"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
